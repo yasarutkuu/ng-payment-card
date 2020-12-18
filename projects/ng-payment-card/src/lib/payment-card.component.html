@@ -133,7 +133,7 @@
       {{ccvContainsLettersTxt}}
     </div>
     <button type="submit" class="cc-form__button cc-form__button--ripple" aria-label="submit" (click)="emitSavedCard()"
-            (keydown.enter)="emitSavedCard()">Submit
+            (keydown.enter)="emitSavedCard()" [disabled]="ccForm.invalid">Submit
     </button>
   </form>
 </section>
